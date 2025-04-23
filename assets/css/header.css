@@ -1,0 +1,140 @@
+/* === Reset & Base === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* === Top Bar === */
+  .top-bar {
+    background: #222;
+    color: #fff;
+    padding: 0.5rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .top-bar-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .top-bar-item a {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .top-bar-item a:hover {
+    color: #00bcd4;
+  }
+  
+  /* === Header / Logo === */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo-container img {
+    height: 60px;
+   }
+  
+  .logo-container h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* === Main Navigation === */
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-nav-link {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .main-nav-link:hover {
+    color: #00bcd4;
+  }
+  
+  /* === Category Navigation === */
+  .category-nav {
+    background: #00bcd4;
+    padding: 0.5rem 0.8rem;
+    justify-items: center;
+  }
+  
+  .category-nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .category-nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .category-nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  /* === Responsive Nav === */
+  @media (max-width: 768px) {
+    .main-nav ul,
+    .category-nav-list {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .main-nav ul.open,
+    .category-nav-list.open {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: inline-block;
+    }
+  
+    .main-nav {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
+  

@@ -24,14 +24,16 @@
     <meta property="og:url" content="https://techregal.com" />
     <meta name="twitter:card" content="summary_large_image" />
     <title>Tech Deals & Hosting | Your Affiliate Hub</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 />
 
   </head>
-  <body class="light-mode">
+  <body class="light-mode dark mode">
     <div class="top-bar" role="banner">
       <ul class="top-bar-list">
         <li class="top-bar-item">
@@ -50,7 +52,7 @@
     <header class="main-header">
       <div class="logo-container">
         <img
-          src="https://via.placeholder.com/150x50?text=Tech+Regal"
+          src="assets/images/tech-regal-logo.png"
           alt="Tech Regal Logo"
         />
         <h1>Tech Regal</h1>
@@ -123,8 +125,8 @@
         
           <div class="smaller-hero-container">
               </article>
-                <div class="small-hero">
-                <button>News</button>
+              <div class="small-hero">
+              <button>News</button>
                 <h2>Google unveils Pixel Fold 2 - Specs and First Impression</h2>
                 </div>
               </article>
@@ -247,60 +249,31 @@
             </article>
           </div>
         </div>
+        <section class="newsletter-signup-form">
+          <form action="subscribe.php" method="post">
+            <h2>Sign up to get the best of Tech Regal's guide direct to your inbox</h2>
+        
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+        
+            <div class="checkbox-container">
+              <input type="checkbox" name="checkbox" id="newsletter-optin" />
+              <label for="newsletter-optin">
+                Contact me with news and offers from other future brands
+              </label>
+            </div>
+        
+            <button type="submit">Sign Up</button>
+          </form>
+        </section>
+        
         <div class="advert-banner">
-
-          <section class="newsletter-signup-form">
-            <form action="subscribe.php" method="post">
-              <h2>
-                Sign up to get the best of Tech Regal's guide direct to your inbox
-              </h2>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-              <label
-                ><input type="checkbox" name="checkbox" /> Contact me with news and
-                offers from other future brands</label
-              >
           <h3>This is an advert banner</h3>
-        </div>
-      </section>
-
-      <section class="newsletter-signup-form">
-        <form action="subscribe.php" method="post">
-          <h2>
-            Sign up to get the best of Tech Regal's guide direct to your inbox
-          </h2>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-          <label
-            ><input type="checkbox" name="checkbox" /> Contact me with news and
-            offers from other future brands</label
-          >
-          <button type="submit">Sign Me Up</button>
-
-          <section class="newsletter-signup-form">
-            <form action="subscribe.php" method="post">
-              <h2>
-                Sign up to get the best of Tech Regal's guide direct to your inbox
-              </h2>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-              <label
-                ><input type="checkbox" name="checkbox" /> Contact me with news and
-                offers from other future brands</label
-              >
-        </form>
+      </div>
       </section>
 
       <section class="featured-review-section">
@@ -435,14 +408,25 @@
 
       </section>
     </main>
-    <section class="footer-section">
-      <div class="site-description-and-socials">
-        <div class="description-left-right-container">
+    <!-- Footer -->
+<section class="footer-section">
+    <div class="site-description-and-socials container">
+      <div class="footer-grid">
+        
+        <!-- Logo & Title -->
+        <div class="footer-brand">
           <h2>TECH REGAL</h2>
         </div>
-        <div class="description-middle-div"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium explicabo commodi vel odio repellat, iure eligendi quia archi.</p>
+  
+        <!-- Description -->
+        <div class="footer-description">
+          <p>
+            Tech Regal is your go-to source for expert gadget reviews, digital products, hosting, and unbeatable tech deals. Stay updated and shop smart!
+          </p>
         </div>
-        <div class="description-left-right-container"><div class="description-left-right-container social-icons">
+  
+        <!-- Social Icons -->
+        <div class="footer-socials">
           <a href="https://facebook.com" target="_blank" aria-label="Facebook">
             <i class="fab fa-facebook-f"></i>
           </a>
@@ -456,22 +440,24 @@
             <i class="fab fa-youtube"></i>
           </a>
         </div>
-        </div>
       </div>
-      <footer class="footer-container">
-        <nav class="footer-nav">
-          <ul class="footer-ul">
-            <li><a class="footer-nav-link" href="about.html">About Us</a></li>
-            <li><a class="footer-nav-link" href="contact.html">Contact Us</a></li>
-            <li><a class="footer-nav-link" href="privacy.html">Privacy Policy</a></li>
-          </ul>
-        </nav>
-        
-      </footer>
-      <div class="copyright-container">
-        <p>&copy; 2025 Tech Regal. All rights reserved.</p>
-      </div>
-    </section>
-
-     </body>
+    </div>
+  
+    <footer class="footer-container container">
+      <nav class="footer-nav">
+        <ul class="footer-ul">
+          <li><a class="footer-nav-link" href="about.html">About Us</a></li>
+          <li><a class="footer-nav-link" href="contact.html">Contact Us</a></li>
+          <li><a class="footer-nav-link" href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </footer>
+  
+    <div class="copyright-container">
+      <p>&copy; 2025 Tech Regal. All rights reserved.</p>
+    </div>
+  </section>
+</body>  
 </html>
+    
+   
